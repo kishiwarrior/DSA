@@ -1,17 +1,4 @@
 
-
-/*
- * Problem: 2975. Maximum Square Area by Removing Fences From a Field
- * Approach:
- * 1. Add field boundaries (0 and m / n) to horizontal and vertical fence lists.
- * 2. Sort both fence position arrays.
- * 3. Compute all possible distances between every pair of horizontal fences
- *    and store them in a hash set.
- * 4. Compute all possible distances between every pair of vertical fences.
- * 5. The largest distance that appears in both horizontal and vertical sets
- *    is the maximum possible square side length.
- * 6. Return (side * side) % 1e9+7, or -1 if no square can be formed.
- */
 #include <vector>
 #include <algorithm>
 #include <unordered_set>
